@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encurtador</title>
+
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="/incluir_usuario" method="post">
+        <br>Nome: <input type="text" placeholder="login" name="nnome"><br>
+        <br>Senha: <input type="password" placeholder="senha" name="nsenha"><br>
+        <br><input id="botao" type="submit" value="Cadastrar">
+        {% if error %}
+        <span style="color:red">{{error}}</span><br>
+        {% endif %}
+    </form>
+
+    <h1>Encurtar URL</h1>
+    <form action="/reduzir">
+        <input type="submit" value="GERAR URL"><br>
+    </form>
+
+    <form></form>
+
+</body>
+</html>
